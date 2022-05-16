@@ -137,18 +137,22 @@ label {
 .projects-container {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
 }
 
 .project {
 	border: solid rgba(255, 255, 255, 0.514) 1px;
 	margin: 40px;
 	height: 400px;
+    width: 300px;
 	border-radius: 4px;
     overflow: hidden;
 }
 
 .project-picture{
     height: 35%;
-    width: 250px;
+    width: 100%;
     position: inherit;
 }
