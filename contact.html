@@ -4,10 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact</title>
+		<link rel="stylesheet" href="style.css" />
+		<title>Contact Tom Hacker</title>
 	</head>
 	<body>
-		<!-- placeholder for later -->
-		<h1>Contact</h1>
+		<nav>
+			<div class="logo">
+				<div class="portrait-container">
+					<img class="portrait" src="./images/TomHacker.jpg" alt="tom hacker" />
+				</div>
+				<h1>Tom Hacker</h1>
+			</div>
+			<div class="links">
+				<a href="./index.html">Home</a>
+				<a href="./contact.html">Contact</a>
+				<a href="./about.html">About</a>
+			</div>
+		</nav>
+		<div class="page-container">
+			<h1 class="title">Contact</h1>
+
+			<div class="form-container">
+				<form id="contact-form" action="post">
+					<section>
+						<label for="name">Your name</label>
+						<input type="text" placeholder="John Doe" name="name" />
+					</section>
+					<section>
+						<label for="organisation">Organisation</label>
+						<input
+							type="text"
+							placeholder="Pound-stretcher"
+							name="organisation"
+						/>
+					</section>
+					<section>
+						<label for="email">Email</label>
+						<input type="text" placeholder="John.doe@email.com" name="email" />
+					</section>
+					<textarea
+						required
+						form="contact-form"
+						name="comment"
+						class="text-area"
+						rows="4"
+						cols="50"
+					>
+tell me more about your organisation.</textarea
+					>
+					<section class="btn-container">
+						<button type="submit" class="btn">Submit</button>
+					</section>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
