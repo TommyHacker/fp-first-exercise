@@ -27,8 +27,8 @@ nav {
 }
 
 .links {
-	width: 400px;
-	font-size: 20pt;
+	width: 300px;
+	font-size: 16pt;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -54,7 +54,7 @@ nav {
 	width: 33%;
 	flex-direction: row;
 	justify-content: space-around;
-    max-width: 300px;
+	max-width: 300px;
 }
 .logo h1 {
 	font-family: 'Pacifico', cursive;
@@ -88,6 +88,7 @@ nav {
 	color: rgb(214, 206, 189);
 	margin: 20px;
 	text-align: center;
+	text-transform: capitalize;
 }
 p {
 	padding: 20px;
@@ -141,28 +142,75 @@ label {
 	color: black;
 	margin: 0 auto;
 }
+.single-project-container{
+border: solid white 1px;
+max-width: 800px;
+margin: 4rem auto;
+height:auto;
+padding: 20px 0;
+}
 
+.single-project-container ul{
+	color:white;
+	margin-left: 6rem;
+	background: rgba(255, 255, 255, 0.432);
+	width: 70%;
+	padding: 20px 40px;
+	height:auto;
+}
+
+.single-project-container ul li{
+	margin: 2rem auto;
+	padding: 4px;
+	font-size: 16pt;
+	
+}
+.single-project-container p{
+	padding: 2rem 4rem;
+	line-height: 2rem;
+
+}
+span.list-comment{
+
+	font-size: 12pt;
+}
 .projects-container {
 	display: grid;
-	grid-template-columns: 33% 33% 33%;
-	margin: 0 auto;
 	width: 1000px;
+	margin: 0 auto;
 	overflow: hidden;
+	text-align: center;
+	grid-template-columns: 33% 33% 33%;
 }
 
 .project {
-	border: solid rgba(255, 255, 255, 0.514) 1px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.801);
 	margin: 40px;
 	height: 400px;
 	width: 300px;
 	border-radius: 4px;
 	overflow: hidden;
+	background: rgb(80, 80, 80);
 }
 
 .project-picture {
 	height: 35%;
 	width: 100%;
 	position: inherit;
+}
+
+a.project-link {
+	display:block;
+	color: white;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.445);
+	text-transform: capitalize;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 5px 20px;
+	margin: 20px auto;
+	background: rgba(122, 232, 247, 0.596);
+	width: 150px;
+	text-align: center;
 }
 
 .burger {
@@ -182,7 +230,7 @@ label {
 	border-radius: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
 	nav {
 		height: 4rem;
 		padding: 20px;
