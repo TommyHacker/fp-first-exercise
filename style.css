@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: rgba(0, 0, 0, 0.644);
 }
 
@@ -86,9 +87,9 @@ nav {
 
 .title {
 	color: rgb(214, 206, 189);
-	margin: 20px;
 	text-align: center;
 	text-transform: capitalize;
+	margin-top: 7rem;
 }
 p {
 	padding: 20px;
@@ -248,10 +249,10 @@ a.project-link {
 		height: calc(100vh - 4rem);
 		padding: 0;
 	}
-	.projects-container {
+	/* .projects-container {
 		grid-template-columns: 100%;
 		width: 500px;
-	}
+	} */
 	.project {
 		width: 95%;
 		margin: 40px auto;
@@ -268,5 +269,9 @@ a.project-link {
 	}
 	section input {
 		width: 100%;
+	}
+	body {
+		width: 100vw;
+		overflow-x: hidden;
 	}
 }
