@@ -4,8 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- adding boostrap above custom CSS to try and avoid conflict -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="style.css" />
-		<title>exercise</title>
+		<title>Tom Hacker Portfolio</title>
 	</head>
 	<body>
 		<nav>
@@ -23,11 +31,53 @@
 				<a href="./about.html">About</a>
 			</div>
 			<!-- This is the burger menu for smaller screens -->
-			<div class="burger">
+			<!-- <div class="burger dropdown-toggle" type="button" id="dropdown">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div> -->
+			<!-- BOOTSTRAP dropdown menu -->
+			<div
+				class="burger dropdown-toggle"
+				type="button"
+				id="dropdownMenuButton"
+				data-bs-toggle="dropdown"
+				aria-expanded="false"
+			>
 				<div class="bar"></div>
 				<div class="bar"></div>
 				<div class="bar"></div>
 			</div>
+			<ul
+				class="dropdown-menu bg-dark float-end"
+				style="height: 200px; text-align: center"
+				aria-labelledby="dropdownMenuButton"
+			>
+				<li>
+					<a
+						class="dropdown-item text-light bg-dark"
+						style="padding: 20px 0"
+						href="./index.html"
+						>Projects</a
+					>
+				</li>
+				<li>
+					<a
+						class="dropdown-item text-light bg-dark"
+						style="padding: 20px 0"
+						href="./about.html"
+						>About Tom</a
+					>
+				</li>
+				<li>
+					<a
+						class="dropdown-item text-light bg-dark"
+						style="padding: 20px 0"
+						href="./contact.html"
+						>Contact</a
+					>
+				</li>
+			</ul>
 		</nav>
 		<!-- This container adds universal padding etc for the main content beneath the NAV -->
 		<div class="page-container">
@@ -80,5 +130,10 @@
 				</ul>
 			</div>
 		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
