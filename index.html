@@ -31,12 +31,30 @@
 				<a href="./about.html">About</a>
 			</div>
 			<!-- This is the burger menu for smaller screens -->
-			<div class="burger">
+			<!-- <div class="burger dropdown-toggle" type="button" id="dropdown">
 				<div class="bar"></div>
 				<div class="bar"></div>
 				<div class="bar"></div>
-			</div>
+			</div> -->
+			<!-- BOOTSTRAP dropdown menu -->
+				<div
+					class="burger dropdown-toggle"
+					type="button"
+					id="dropdownMenuButton"
+					data-bs-toggle="dropdown"
+					aria-expanded="false"
+				>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+				<ul class="dropdown-menu bg-dark float-end" style="height:200px;text-align:center;" aria-labelledby="dropdownMenuButton">
+					<li><a class="dropdown-item text-light bg-dark" style="padding: 20px 0;" href="./index.html">Projects</a></li>
+					<li><a class="dropdown-item text-light bg-dark" style="padding: 20px 0;" href="./about.html">About Tom</a></li>
+					<li><a class="dropdown-item text-light bg-dark" style="padding: 20px 0;" href="./contact.html">Contact</a></li>
+				</ul>
 		</nav>
+
 		<!-- This container adds universal padding etc for the main content within the page, beneath the NAV -->
 		<!-- do not use this page container with bootstrap! -->
 		<!-- <div class="page-container"> -->
@@ -93,9 +111,11 @@
 		<div class="row" style="margin: 4rem auto">
 			<!--Bootstrap Project Card -->
 
+			<!-- Card Column Container -->
+
 			<div
-				class="col col-4 col-sm-12 col-md-6 col-lg-4 mx-auto mb-4"
-				style="width: 620px"
+				class="col col-4 col-sm-12 col-md-6 col-lg-4 mx-auto"
+				style="width: 620px; margin-bottom: 10rem"
 			>
 				<div class="card shadow bg-dark text-light" style="max-width: 600px">
 					<img
@@ -129,9 +149,11 @@
 					</div>
 				</div>
 			</div>
+			<!-- Card Column Container -->
+
 			<div
-				class="col col-4 col-sm-12 col-md-6 col-lg-4 mx-auto mb-4"
-				style="width: 620px"
+				class="col col-4 col-sm-12 col-md-6 col-lg-4 mx-auto"
+				style="width: 620px; margin-bottom: 10rem"
 			>
 				<div class="card shadow bg-dark text-light" style="max-width: 600px">
 					<img
@@ -165,10 +187,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- Card three -->
+			<!-- Card Column Container -->
+
 			<div
-				class="col col-4 col-sm-12 col-md-6 col-lg-4 mx-auto mb-4"
-				style="width: 620px"
+				class="col col-4 col-sm-12 col-md-6 col-lg-4 mx-auto"
+				style="width: 620px; margin-bottom: 10rem"
 			>
 				<div class="card shadow bg-dark text-light" style="max-width: 600px">
 					<img
@@ -206,5 +229,13 @@
 
 		<!-- for page container - not to be used with bootstrap! -->
 		<!-- </div> -->
+
+		<!-- Javacsript for Bootstrap -->
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
