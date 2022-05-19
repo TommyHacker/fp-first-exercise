@@ -81,25 +81,7 @@
 		</nav>
 		<h1 class="title">Contact</h1>
 
-		<div class="form-container">
-			<form id="contact-form" action="post">
-				<section>
-					<label for="name">Your name</label>
-					<input type="text" placeholder="John Doe" name="name" />
-				</section>
-				<section>
-					<label for="organisation">Organisation</label>
-					<input
-						type="text"
-						placeholder="Pound-stretcher"
-						name="organisation"
-					/>
-				</section>
-				<section>
-					<label for="email">Email</label>
-					<input type="text" placeholder="John.doe@email.com" name="email" />
-				</section>
-				<textarea
+		<!-- <textarea
 					required
 					form="contact-form"
 					name="comment"
@@ -108,10 +90,42 @@
 					cols="50"
 				>
 tell me more about your organisation.</textarea
-				>
-				<section class="btn-container">
-					<button type="submit" class="btn">Submit</button>
-				</section>
+				> -->
+
+		<div class="container center">
+			<form class="text-start m-auto mt-5" style="max-width: 600px">
+				<div class="mb-3">
+					<label class="text-dark" for="exampleInputEmail1" class="form-label"
+						>Email address</label
+					>
+					<input
+						type="email"
+						class="form-control my-4"
+						id="Email"
+						aria-describedby="Email"
+					/>
+					<div id="Email" class="form-text">
+						I will never share your email with anyone else.
+					</div>
+				</div>
+				<div class="mb-3">
+					<label class="text-dark" for="Organisation" class="form-label"
+						>Organisation</label
+					>
+					<input type="text" class="form-control my-4" id="Organisation" />
+				</div>
+				<div class="form-floating">
+					<textarea
+						class="form-control my-4"
+						placeholder="Leave a comment here"
+						id="floatingTextarea2"
+						style="height: 100px"
+					></textarea>
+					<label class="text-dark" for="floatingTextarea2">Message</label>
+				</div>
+				<button type="submit" class="btn bg-dark text-light m-auto shadow">
+					Submit
+				</button>
 			</form>
 		</div>
 		<script
