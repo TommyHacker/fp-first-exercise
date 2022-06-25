@@ -1,10 +1,16 @@
 nav {
     box-shadow: 0px 0px 2px grey;
+    background: white;
+    width: 100vw;
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+
 }
 
 .nav-left {
@@ -52,13 +58,32 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 150px;
+    width: 160px;
+    cursor: pointer;
 }
 
 .logo-name {
     text-transform: capitalize;
-    word-spacing: -7.6px;
+    /* word-spacing: -7.6px; */
 }
+.blink {
+    animation-name: blink;
+    color: white;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier();
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0% {color:white;}
+    25%{color:white}
+    26%{color:black}
+    74%{color:black;}
+    75%{color:white;}
+
+}
+
+
 
 .logo-image-container {
     border-radius: 50%;
@@ -68,3 +93,4 @@ nav {
     width: 50px;
     filter: grayscale(0.2);
 }
+

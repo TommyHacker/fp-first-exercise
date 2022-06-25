@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/styles/main.css">
-    <title>Tom Hacker Portfolio</title>
+    <script defer src="./static/scripts/index.js"></script>
+    <title>Tom Hacker - Portfolio</title>
 </head>
 <body>
     <nav>
 <div class="nav-left">
             <div class="logo-container">
-                <div class="logo-name">tom hacker</div>
+                <div class="logo-name">tom hacker<span class="blink">_</span></div>
                 <div class="logo-image-container">
                     <img class="logo-image" src="./images/TomHacker.jpg" width="50px" height="50px" alt="tom hacker portrait">
                 </div>
@@ -28,11 +29,17 @@
 
     <div class="projects-grid">
         <div class="project-card">
+            
             <h2  class="project-title">Project Tracker</h2>
             <div class="project-image-container">
                 <img src="./images/project-0-projecttracker.png" width="100%" alt="" class="project-image">
             </div>
+            <p class="project-description">A full stack application where after authentication, projects can
+            be created and tickets submitted, documented, tracked and
+            completed. Other features include: assigning User roles and
+            assigning devs to separate projects.</p>
           <div class="project-points">
+            
             <ul class="project-features">
                 <h2 class="project-features-title">Features</h2>
                 <li class="project-feature">Authentication</li>
@@ -41,25 +48,62 @@
                 <li class="project-feature">Projects</li>
                 <li class="project-feature">Project Tickets</li>
                 <li class="project-feature">Notifications</li>
-                <li class="project-feature">Ticket Update Messages</li>
+                <li class="project-feature">Ticket Update Chatroom</li>
                 <li class="project-feature">noSQL CRUD</li>
             
             </ul>
             <ul class="project-tech-list">
                 <h2 class="project-tech-title">Technology</h2>
-                <li class="project-tech-item">HTML / CSS / JAVASCRIPT</li>
-                <li class="project-tech-item">NODE.js Express.js</li>
-                <li class="project-tech-item">Next.js</li>
-                <li class="project-tech-item">MongoDB / Mongoose / Atlas</li>
+                <li class="project-tech-item">HTML</li>
+                <li class="project-tech-item">CSS</li>
+                <li class="project-tech-item">JAVASCRIPT</li>
+                <li class="project-tech-item">NODE</li>
+                <li class="project-tech-item">Express</li>
+                <li class="project-tech-item">Next</li>
+                <li class="project-tech-item">MongoDB/Atlas</li>
                 <li class="project-tech-item">Git / Github</li>
                 <li class="project-tech-item">Heroku</li>
             </ul>
           </div>
-            <p class="project-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio architecto praesentium culpa quas. Quia reiciendis, repellat, molestiae enim dolores suscipit totam beatae ipsa corrupti nostrum quae porro, quidem est reprehenderit.</p>
         </div>
+
+        <div class="project-card">
+        
+            <h2 class="project-title">Anonymates</h2>
+            <div class="project-image-container">
+                <img src="./images/project-4-anonymates.png" width="100%" alt="" class="project-image">
+            </div>
+            <p class="project-description">An anonymous message board where users can react,like and reply to posts and also utilise the GIPHY api to attatch GIFs.</p>
+            <div class="project-points">
+        
+                <ul class="project-features">
+                    <h2 class="project-features-title">Features</h2>
+                    <li class="project-feature">Giphy API</li>
+                    <li class="project-feature">User IP constraints</li>
+                    <li class="project-feature">Search Articles</li>
+                    <li class="project-feature">Articles Stored to FS</li>
+                    <li class="project-feature">Emoji Reactions</li>
+                    <li class="project-feature">Likes</li>
+                    <li class="project-feature">Featured Articles</li>
+        
+                </ul>
+                <ul class="project-tech-list">
+                    <h2 class="project-tech-title">Technology</h2>
+                    <li class="project-tech-item">HTML</li>
+                    <li class="project-tech-item">CSS</li>
+                    <li class="project-tech-item">JAVASCRIPT</li>
+                    <li class="project-tech-item">OOP</li>
+                    <li class="project-tech-item">FileSystem</li>
+                    <li class="project-tech-item">Netlify</li>
+                    <li class="project-tech-item">Heroku</li>
+                    <li class="project-tech-item">Git / Github</li>
+                </ul>
+            </div>
+        </div>
+
+               
     </div>
 
-</div>
 
 
     <footer> Tommy Hacker &copy;2022</footer>

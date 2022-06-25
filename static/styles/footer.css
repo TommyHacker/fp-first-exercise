@@ -1,0 +1,18 @@
+footer {
+    position: sticky;
+    bottom: 0px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    justify-content: center;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    opacity: 0.2;
+    transition: 0.2s;
+}
+
+footer:hover {
+    opacity: 0.7;
+}
