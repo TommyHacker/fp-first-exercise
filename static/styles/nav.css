@@ -1,6 +1,6 @@
 nav {
     box-shadow: 0px 0px 2px rgb(128, 128, 128);
-    background: white;
+    background-color: rgb(239, 239, 239);
     width: 100vw;
     height: 4rem;
     display: flex;
@@ -74,13 +74,13 @@ nav {
     animation-timing-function: cubic-bezier();
     animation-iteration-count: infinite;
 }
-
+  
 @keyframes blink{
-    0% {color:white;}
-    25%{color:white}
+    0% {color:rgb(239, 239, 239);}
+    25%{color:rgb(239, 239, 239)}
     26%{color:black}
     74%{color:black;}
-    75%{color:white;}
+    75%{color:rgb(239, 239, 239);}
 
 }
 

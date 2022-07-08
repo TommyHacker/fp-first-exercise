@@ -1,1 +1,4 @@
-# exercise readme
+# Tom Hacker: Portfolio;
+
+## Responsive;
+-   Responsive through pure CSS MediaQueries;

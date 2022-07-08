@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+   background-image: linear-gradient(rgb(171, 233, 238),rgb(136, 225, 236));
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.sky-container{
+    width: 100%;
+    height: 100%;
+
+}
+
+.cloud-container{
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    z-index: 999;
+    opacity: 0.3;
+    filter: blur(1px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.cloud{
+width: 150px;
+}
+
+.from-left,.from-right{
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+}
+.from-left{
+    animation-name: fromLeft;
+}
+.from-right{animation-name: fromRight;}
+
+.foreground-container{
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background-image: url("../../images/sprites/foreground/tree-hill-mockup.png");
+}
+
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-10vw);
+    }
+
+    to {
+        transform: translateX(110vw);    }
+}
+@keyframes fromRight {
+    from {
+                transform: translateX(110vw);
+    }
+
+    to {
+        transform: translateX(-10vw);
+    }
+}

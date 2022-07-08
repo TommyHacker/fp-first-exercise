@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- adding boostrap above custom CSS to try and avoid conflict -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Tom Hacker Portfolio</title>
+	</head>
+	<body>
+		<nav class="fixed-top">
+			<!-- This is the left section of the nav, with name as "logo" and portrait inside a container -->
+			<div class="logo">
+				<h1>Tom Hacker</h1>
+				<div class="portrait-container">
+					<img class="portrait" src="./images/TomHacker.jpg" alt="tom hacker" />
+				</div>
+			</div>
+			<!-- This is the right hand side of the nav on a large screen -->
+			<div class="links">
+				<a href="./index.html">Home</a>
+				<a href="./contact.html">Contact</a>
+				<a href="./about.html">About</a>
+			</div>
+			<!-- This is the burger menu for smaller screens -->
+			<!-- <div class="burger dropdown-toggle" type="button" id="dropdown">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div> -->
+			<!-- BOOTSTRAP dropdown menu -->
+				<div
+					class="burger dropdown-toggle"
+					type="button"
+					id="dropdownMenuButton"
+					data-bs-toggle="dropdown"
+					aria-expanded="false"
+				>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+				<ul class="dropdown-menu bg-dark float-end" style="height:200px;text-align:center;" aria-labelledby="dropdownMenuButton">
+					<li><a class="dropdown-item text-light bg-dark" style="padding: 20px 0;" href="./index.html">Projects</a></li>
+					<li><a class="dropdown-item text-light bg-dark" style="padding: 20px 0;" href="./about.html">About Tom</a></li>
+					<li><a class="dropdown-item text-light bg-dark" style="padding: 20px 0;" href="./contact.html">Contact</a></li>
+				</ul>
+		</nav>	
+
+			<h1 class="title">About</h1>
+			<p class="text-body text-center">
+				<mark>
+                    Hello, i am Tom Hacker. That is my real name!
+                </mark>
+                <hr style="margin:80px auto;width:1200px;">
+			</p>
+            <p class="text-body">
+                I really enjoy every part of the tech stack, and also focusing my attention on each aspect as the project grows and i get to feel the massive reward. Mostly i have worked with html,css,javascript,React/Next.js and mongoDB / Atlas.
+                <br>
+                
+            </p>
+			<p class="text-body">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam fuga modi quidem sapiente reprehenderit cumque illum accusantium aliquam asperiores. Inventore natus dolore blanditiis voluptatem magni sequi qui at consequuntur placeat?
+			</p>
+			<p class="text-body">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+				perferendis ipsam dignissimos soluta quo cum. Rerum, qui praesentium?
+				Amet nesciunt itaque delectus quos repellat adipisci velit. Sed ratione
+				iusto sunt.
+			</p>
+			<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

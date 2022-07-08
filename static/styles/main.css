@@ -17,13 +17,33 @@
 body{
     overflow-x: hidden;
     user-select: none;
+    background-color: black;
+}
 
+.backdrop{
+    height: 300%;
+    min-width: 1000px;
+    min-height: 1000px;
+    max-height: 2600px;
+    max-width: 6000px;
+    width:200%;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    animation: orbit ease;
+    animation-duration: 280s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    filter:brightness(0.3) blur(1px)  saturate(0.7) sepia(1);
 }
 
 .projects-grid{
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 100%;
+        background-color: rgba(239, 239, 239, 0.567);
 }
 /* @media only screen and (min-width:768px){
     .projects-grid{
@@ -31,8 +51,19 @@ body{
         grid-template-columns: 50% 50%;    }
 } */
 
+@keyframes orbit{
+    from{transform: translate(-50%,-50%) rotate(0deg);}
+    to{transform: translate(-50%,-50%) rotate(360deg);}
+}
+
 @media only screen and (min-width:1269px) {
     .projects-grid {
         grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (min-width:2400px) {
+    .projects-grid {
+        grid-template-columns: 33% 33% 33%;
     }
 }
