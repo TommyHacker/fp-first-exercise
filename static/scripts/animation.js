@@ -179,6 +179,11 @@ const hoverHandler = (house, modal) => {
       modal.style.display = "none";
     }, 400);
   });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 768) {
+      modal.style.display = "none";
+    }
+  });
 };
 
 let houses = [house1, house2, house3, house4, house5];
