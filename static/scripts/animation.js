@@ -166,13 +166,18 @@ const project2 = document.querySelector(".project-2");
 const project3 = document.querySelector(".project-3");
 const project4 = document.querySelector(".project-4");
 const project5 = document.querySelector(".project-5");
+const close = document.querySelector(".close");
 
 const hoverHandler = (house, modal) => {
   house.addEventListener("mouseover", () => {
     modal.style.display = "flex";
+    modal.style.animation = "swipe-in forwards ease-in-out 0.4s";
   });
-  house.addEventListener("mouseout", () => {
-    modal.style.display = "none";
+  close.addEventListener("click", () => {
+    modal.style.animation = "swipe-out forwards ease-in-out 0.4s";
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 400);
   });
 };
 
