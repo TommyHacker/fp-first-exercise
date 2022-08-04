@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    /* overflow-x: hidden; */
 }
 .container{
    background-image: linear-gradient(rgb(171, 233, 238),rgb(136, 225, 236));
@@ -32,6 +33,8 @@
 
 .cloud{
 width: 150px;
+position: absolute;
+z-index: -1;
 }
 
 .from-left,.from-right{
@@ -56,6 +59,20 @@ width: 150px;
     background-image: url("../../images/sprites/foreground/tree-hill-mockup.png");
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: capitalize;
+    animation: swipe-in 1s forwards ease-in-out;
+}
+
+
 
 @keyframes fromLeft {
     from {
@@ -72,5 +89,76 @@ width: 150px;
 
     to {
         transform: translateX(-10vw);
+    }
+}
+
+@keyframes swipe-out {
+    from{transform: translate(-50%, -50%);}
+    to{transform: translate(-2000%,-50%);}
+}
+@keyframes swipe-in {
+    from {transform: translate(-2000%, -50%);}
+    to{transform:translate(-50%,-50%);}
+}
+
+.houses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height:110px;
+    display: none;
+}
+.house{
+    border: solid white 2px;
+    border-radius: 4px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.project-1,.project-2,.project-3,.project-4,.project-5{
+    display: none;
+}
+.project-container{
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 6px;
+    background: rgba(156, 234, 248, 0.399);
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 0px 4px rgba(36, 36, 36, 0.067);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (min-width:1300px){
+    .menu{
+        animation: swipe-out 2s forwards ease-in-out;
+        }
+
+    .houses {
+        width: 40%;
+        display: flex;
+    }
+    .house{
+        height: 60px;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width:1600px){
+    .houses{
+        width: 55%;
+    }
+    .house{
+        width: 180px;
+        height: 100px;
     }
 }

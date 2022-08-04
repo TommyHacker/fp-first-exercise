@@ -58,6 +58,7 @@ const generateId = () => {
   highestId += 1;
   return oldId;
 };
+
 // this will represent each cloud that generates on the page
 // random image, from random direction, at random y axis, at random time.
 class Cloud {
@@ -153,3 +154,31 @@ setInterval(() => {
   bird.renderBird();
   bird.mutate();
 }, bird.startTime);
+
+const house1 = document.querySelector(".house-1");
+const house2 = document.querySelector(".house-2");
+const house3 = document.querySelector(".house-3");
+const house4 = document.querySelector(".house-4");
+const house5 = document.querySelector(".house-5");
+
+const project1 = document.querySelector(".project-1");
+const project2 = document.querySelector(".project-2");
+const project3 = document.querySelector(".project-3");
+const project4 = document.querySelector(".project-4");
+const project5 = document.querySelector(".project-5");
+
+const hoverHandler = (house, modal) => {
+  house.addEventListener("mouseover", () => {
+    modal.style.display = "flex";
+  });
+  house.addEventListener("mouseout", () => {
+    modal.style.display = "none";
+  });
+};
+
+let houses = [house1, house2, house3, house4, house5];
+let modals = [project1, project2, project3, project4, project5];
+
+for (let i = 0; i < houses.length; i++) {
+  hoverHandler(houses[i], modals[i]);
+}
